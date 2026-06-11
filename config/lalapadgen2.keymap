@@ -65,13 +65,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q           &kp W          &kp E             &kp R           &kp T                                 &kp Y               &kp U           &kp I             &kp O           &kp P
-&kp A           &kp S          &kp D             &kp F           &kp G                                 &kp H               &kp J           &kp K             &kp L           &kp BACKSPACE
-&kp Z           &kp X          &kp C             &kp V           &kp B                                 &kp N               &kp M           &kp COMMA         &kp PERIOD      &kp ENTER
-&kp LEFT_SHIFT  &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LANGUAGE_1  &kp SPACE             &mo 1   &mo 2   &kp SPACE           &kp LANGUAGE_2  &kp SLASH         &kp UNDERSCORE  &kp MINUS
-                &none          &kp RIGHT         &kp DOWN        &kp LEFT              &kp UP  &kp UP  &kp LEFT            &kp DOWN        &kp RIGHT         &none
-&mkp LCLK       &mkp RCLK      &kp LG(A)                                                                                                   &mkp LCLK         &mkp RCLK       &kp LG(A)
-&kp LC(LEFT)    &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp C_AC_SCROLL_DOWN                  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)   &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp K_SCROLL_UP
+&kp Q           &kp W          &kp E             &kp R           &kp T                      &kp Y               &kp U           &kp I             &kp O           &kp P
+&kp A           &kp S          &kp D             &kp F           &kp G                      &kp H               &kp J           &kp K             &kp L           &kp BACKSPACE
+&kp Z           &kp X          &kp C             &kp V           &kp B                      &kp N               &kp M           &kp COMMA         &kp PERIOD      &kp ENTER
+&kp LEFT_SHIFT  &kp LEFT_ALT   &kp LEFT_COMMAND  &kp LANGUAGE_1  &kp SPACE  &mo 1   &mo 2   &kp SPACE           &kp LANGUAGE_2  &kp SLASH         &kp UNDERSCORE  &kp MINUS
+                &none          &kp RIGHT         &kp DOWN        &kp LEFT   &kp UP  &kp UP  &kp LEFT            &kp DOWN        &kp RIGHT         &none
+&mkp LCLK       &mkp RCLK      &mkp MCLK                                                                                        &mkp LCLK         &mkp RCLK       &mkp MCLK
+&kp LC(LEFT)    &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp RCTRL                  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)   &kp LC(UP_ARROW)  &kp LC(DOWN)    &kp RCTRL
             >;
         };
 
@@ -79,7 +79,7 @@
             display-name = "secondary_layer";
             bindings = <
 &kp EXCLAMATION   &kp DOUBLE_QUOTES  &kp HASH              &kp DOLLAR             &kp PERCENT                  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp CARET     &kp PIPE
-&kp AMPERSAND     &kp SQT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp N0                       &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp MINUS     &kp EQUAL
+&kp AMPERSAND     &kp SQT            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON                    &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp AT_SIGN   &kp EQUAL
 &kp F6            &kp F1             &kp F8                &kp F9                 &kp F10                      &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp UP_ARROW  &kp KP_ASTERISK
 &kp LEFT_SHIFT    &trans             &kp LEFT_COMMAND      &trans                 &trans       &trans  &trans  &kp KP_NUMBER_0   &kp DOT            &kp LEFT         &kp DOWN      &kp RIGHT
                   &trans             &trans                &trans                 &trans       &trans  &trans  &trans            &trans             &trans           &trans
