@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 1>, <&mo 4>;
         };
 
         custom_minus_equal: custom_minus_equal {
@@ -119,39 +119,51 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q           &kp W                    &kp E                 &kp R              &kp T                                             &kp Y               &kp U          &kp I             &kp O                    &custom_minus_equal
-&kp A           &kp S                    &kp D                 &kp F              &kp G                                             &kp H               &kp J          &kp K             &kp L                    &kp P
-&kp Z           &kp X                    &kp C                 &kp V              &kp B                                             &kp N               &kp M          &kp COMMA         &kp PERIOD               &kp BACKSPACE
-&kp LEFT_SHIFT  &kp LEFT_ALT             &kp LEFT_COMMAND      &mo 1              &kp LANGUAGE_2        &kp SPACE        &kp ENTER  &kp LANGUAGE_1      &mo 2          &kp LCTRL         &kp SLASH                &kp UNDER
-                &kp LS(LG(KP_NUMBER_4))  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP  &kp UP     &kp LEFT            &kp DOWN       &kp RIGHT         &kp LS(LG(KP_NUMBER_3))
-&mkp LCLK       &mkp RCLK                &mkp MCLK                                                                                                                     &mkp LCLK         &mkp RCLK                &mkp MCLK
-&trans          &trans                   &trans                &trans             &kp RCTRL                                         &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(UP_ARROW)  &kp LC(DOWN)             &trans
-            >;
-        };
-
-        SECONDARY_LAYER {
-            display-name = "secondary_layer";
-            bindings = <
-&kp ESCAPE        &kp F7             &kp F8            &kp F9  &kp F12                  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &custom_minus_equal     &custom_caret_tilde
-&kp TAB           &kp F4             &kp F5            &kp F6  &kp F11                  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &custom_at_grave        &custom_yen_pipe
-&kp LCTRL         &kp F1             &kp F2            &kp F3  &kp F10                  &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp LEFT_BRACKET        &kp RIGHT_BRACKET
-&kp LEFT_SHIFT    &trans             &kp LEFT_COMMAND  &trans  &trans   &trans  &trans  &kp GLOBE         &kp NUMBER_0       &kp DOT          &custom_semicolon_plus  &custom_colon_asterisk
-                  &trans             &trans            &trans  &trans   &trans  &trans  &trans            &trans             &trans           &trans
-&trans            &trans             &trans                                                                                  &trans           &trans                  &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans            &trans  &trans                   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans                  &trans
+&kp Q           &kp W                    &kp E                 &kp R              &kp T                                             &kp Y               &kp U           &kp I             &kp O                    &kp P
+&kp A           &kp S                    &kp D                 &kp F              &kp G                                             &kp H               &kp J           &kp K             &kp L                    &kp BACKSPACE
+&kp Z           &kp X                    &kp C                 &kp V              &kp B                                             &kp N               &kp M           &kp COMMA         &kp PERIOD               &custom_minus_equal
+&kp LEFT_SHIFT  &kp LEFT_ALT             &kp LEFT_COMMAND      &kp LANGUAGE_2     &mo 1                 &kp SPACE        &kp ENTER  &mo 2               &kp LANGUAGE_1  &kp LCTRL         &kp SLASH                &kp UNDER
+                &kp LS(LG(KP_NUMBER_4))  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP  &kp UP     &kp LEFT            &kp DOWN        &kp RIGHT         &kp LS(LG(KP_NUMBER_3))
+&mkp LCLK       &mkp RCLK                &mkp MCLK                                                                                                                      &mkp LCLK         &mkp RCLK                &mkp MCLK
+&trans          &trans                   &trans                &trans             &kp RCTRL                                         &kp LC(LEFT_ARROW)  &kp LC(RIGHT)   &kp LC(UP_ARROW)  &kp LC(DOWN)             &trans
             >;
         };
 
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR            &kp PERCENT                            &kp PAGE_UP    &kp HOME  &kp UP_ARROW    &kp END    &kp PRINTSCREEN
-&kp AMPERSAND    &kp SQT            &trans            &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &kp PAGE_DOWN  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp SCROLLLOCK
-&kp LCTRL        &kp X              &kp C             &kp V                 &trans                                 &trans         &trans    &trans          &trans     &kp PAUSE_BREAK
-&kp LEFT_SHIFT   &trans             &kp LEFT_COMMAND  &trans                &trans                 &trans  &trans  &trans         &trans    &mkp MB4        &mkp MB5   &trans
-                 &trans             &trans            &trans                &trans                 &trans  &trans  &trans         &trans    &trans          &trans
-&trans           &trans             &trans                                                                                                  &trans          &trans     &trans
-&trans           &trans             &trans            &trans                &trans                                 &trans         &trans    &trans          &trans     &trans
+&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR  &kp PERCENT                          &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &custom_caret_tilde     &custom_yen_pipe
+&kp TAB          &mkp MB4           &mkp MB5          &trans      &kp AMPERSAND                        &trans   &trans                &trans                 &custom_at_grave        &trans
+&kp LCTRL        &trans             &trans            &trans      &trans                               &trans   &trans                &trans                 &custom_semicolon_plus  &custom_colon_asterisk
+&kp LEFT_SHIFT   &kp LEFT_ALT       &kp LEFT_COMMAND  &trans      &trans         &kp SPACE  &kp ENTER  &mo 3    &trans                &trans                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET
+                 &trans             &trans            &trans      &trans         &trans     &trans     &trans   &trans                &trans                 &trans
+&trans           &trans             &trans                                                                                            &trans                 &trans                  &trans
+&trans           &trans             &trans            &trans      &trans                               &trans   &trans                &trans                 &trans                  &trans
+            >;
+        };
+
+        SECONDARY_LAYER {
+            display-name = "secondary_layer";
+            bindings = <
+&kp ESCAPE        &kp F7             &kp F8            &kp F9  &kp F12                  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &trans        &trans
+&kp TAB           &kp F4             &kp F5            &kp F6  &kp F11                  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &trans        &kp BACKSPACE
+&kp LCTRL         &kp F1             &kp F2            &kp F3  &kp F10                  &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp UP_ARROW  &trans
+&kp LEFT_SHIFT    &kp LEFT_ALT       &kp LEFT_COMMAND  &trans  &mo 3    &trans  &trans  &trans            &kp KP_NUMBER_0    &kp LEFT         &kp DOWN      &kp RIGHT
+                  &trans             &trans            &trans  &trans   &trans  &trans  &trans            &trans             &trans           &trans
+&trans            &trans             &trans                                                                                  &trans           &trans        &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans            &trans  &trans                   &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans        &trans
+            >;
+        };
+
+        MAGIC_LAYER {
+            bindings = <
+&kp LS(B)  &kp LS(M)        &kp A   &kp LS(N)  &trans                  &trans  &kp LS(Y)        &kp U            &kp M            &kp A
+&kp LS(T)  &kp KP_NUMBER_4  &kp L   &kp M      &trans                  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_2  &kp KP_NUMBER_6
+&trans     &trans           &trans  &trans     &trans                  &trans  &trans           &trans           &trans           &trans
+&trans     &trans           &trans  &trans     &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans
+           &trans           &trans  &trans     &trans  &trans  &trans  &trans  &trans           &trans           &trans
+&trans     &trans           &trans                                                              &trans           &trans           &trans
+&trans     &trans           &trans  &trans     &trans                  &trans  &trans           &trans           &trans           &trans
             >;
         };
 
@@ -173,8 +185,8 @@
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <1 4>;
+            then-layer = <4>;
         };
     };
 };
