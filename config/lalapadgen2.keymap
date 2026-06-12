@@ -111,6 +111,11 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        COMBO_CONTROL {
+            bindings = <&kp LEFT_CONTROL>;
+            key-positions = <20 21>;
+        };
     };
 
     keymap {
