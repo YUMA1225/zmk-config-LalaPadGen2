@@ -138,7 +138,7 @@
             display-name = "tertiary_layer";
             bindings = <
 &kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH          &kp DOLLAR  &kp PERCENT                          &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &custom_caret_tilde     &custom_yen_pipe
-&kp TAB          &mkp MB4           &mkp MB5          &trans      &kp AMPERSAND                        &trans   &trans                &trans                 &custom_at_grave        &trans
+&kp TAB          &mkp MB4           &mkp MB5          &trans      &kp AMPERSAND                        &trans   &trans                &trans                 &custom_at_grave        &kp BACKSPACE
 &kp LCTRL        &trans             &trans            &trans      &trans                               &trans   &trans                &trans                 &custom_semicolon_plus  &custom_colon_asterisk
 &kp LEFT_SHIFT   &kp LEFT_ALT       &kp LEFT_COMMAND  &trans      &trans         &kp SPACE  &kp ENTER  &mo 3    &trans                &trans                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET
                  &trans             &trans            &trans      &trans         &trans     &trans     &trans   &trans                &trans                 &trans
@@ -150,8 +150,8 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp ESCAPE        &kp F7             &kp F8            &kp F9  &kp F12                  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &trans        &trans
-&kp TAB           &kp F4             &kp F5            &kp F6  &kp F11                  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &trans        &kp BACKSPACE
+&kp ESCAPE        &kp F7             &kp F8            &kp F9  &kp F12                  &kp KP_NUMBER_7   &kp KP_NUMBER_8    &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_EQUAL
+&kp TAB           &kp F4             &kp F5            &kp F6  &kp F11                  &kp KP_NUMBER_4   &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp PLUS      &kp BACKSPACE
 &kp LCTRL         &kp F1             &kp F2            &kp F3  &kp F10                  &kp KP_NUMBER_1   &kp KP_NUMBER_2    &kp KP_NUMBER_3  &kp UP_ARROW  &trans
 &kp LEFT_SHIFT    &kp LEFT_ALT       &kp LEFT_COMMAND  &trans  &mo 3    &trans  &trans  &trans            &kp KP_NUMBER_0    &kp LEFT         &kp DOWN      &kp RIGHT
                   &trans             &trans            &trans  &trans   &trans  &trans  &trans            &trans             &trans           &trans
@@ -162,13 +162,13 @@
 
         MAGIC_LAYER {
             bindings = <
-&kp LS(B)  &kp LS(M)        &kp A   &kp LS(N)  &trans                  &trans  &kp LS(Y)        &kp U            &kp M            &kp A
-&kp LS(T)  &kp KP_NUMBER_4  &kp L   &kp M      &trans                  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_2  &kp KP_NUMBER_6
-&trans     &trans           &trans  &trans     &trans                  &trans  &trans           &trans           &trans           &trans
-&trans     &trans           &trans  &trans     &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans
-           &trans           &trans  &trans     &trans  &trans  &trans  &trans  &trans           &trans           &trans
-&trans     &trans           &trans                                                              &trans           &trans           &trans
-&trans     &trans           &trans  &trans     &trans                  &trans  &trans           &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &kp LS(Y)        &kp U            &kp M            &kp A
+&trans  &trans  &trans  &trans  &trans                  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_2  &kp KP_NUMBER_6
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans           &trans           &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans           &trans           &trans
+&trans  &trans  &trans                                                           &trans           &trans           &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans           &trans           &trans           &trans
             >;
         };
 
