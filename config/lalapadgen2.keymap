@@ -111,6 +111,11 @@
             bindings = <&kp TAB>;
             key-positions = <10 11>;
         };
+
+        COMBO_CLICK {
+            bindings = <&mkp LCLK>;
+            key-positions = <13 12>;
+        };
     };
 
     keymap {
