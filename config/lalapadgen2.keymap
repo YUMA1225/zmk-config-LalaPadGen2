@@ -97,6 +97,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        custom_question_slash: custom_question_slash {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CUSTOM_QUESTION_SLASH";
+            bindings = <&kp QUESTION>, <&kp KP_DIVIDE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -127,7 +136,7 @@
 &kp Q                       &kp W            &kp E                 &kp R                    &kp T                                              &kp Y            &kp U           &kp I             &kp O               &kp P
 &kp A                       &kp S            &kp D                 &kp F                    &kp G                                              &kp H            &kp J           &kp K             &kp L               &kp BACKSPACE
 &kp Z                       &kp X            &kp C                 &kp V                    &kp B                                              &kp N            &kp M           &kp COMMA         &kp PERIOD          &custom_minus_equal
-&mt LEFT_SHIFT EXCLAMATION  &kp LEFT_ALT     &kp LCTRL             &mt LEFT_GUI LANGUAGE_2  &lt 1 SPACE           &kp SPACE        &kp ENTER   &mo 2            &kp LANGUAGE_1  &kp GLOBE         &kp UNDER           &kp LS(SLASH)
+&mt LEFT_SHIFT EXCLAMATION  &kp LEFT_ALT     &kp LCTRL             &mt LEFT_GUI LANGUAGE_2  &lt 1 SPACE           &kp SPACE        &kp ENTER   &mo 2            &kp LANGUAGE_1  &kp GLOBE         &kp UNDER           &custom_question_slash
                             &kp LG(LS(N4))   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN        &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_UP  &kp LG(UP)  &kp LS(LC(TAB))  &kp LG(DOWN)    &kp LC(TAB)       &kp LG(LA(SPACE))
 &mkp LCLK                   &kp LG(KP_PLUS)  &kp LG(KP_MINUS)                                                                                                                   &mkp LCLK         &trans              &mkp RCLK
 &mkp MB4                    &mkp MB5         &kp LC(UP_ARROW)      &kp LC(DOWN_ARROW)       &kp RCTRL                                          &kp LC(LEFT)     &kp LC(RIGHT)   &kp LC(UP_ARROW)  &kp LC(DOWN_ARROW)  &trans
