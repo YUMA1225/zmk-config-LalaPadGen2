@@ -101,7 +101,7 @@
         custom_question_slash: custom_question_slash {
             compatible = "zmk,behavior-mod-morph";
             label = "CUSTOM_QUESTION_SLASH";
-            bindings = <&kp QUESTION>, <&kp KP_DIVIDE>;
+            bindings = <&kp QUESTION>, <&kp SLASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
