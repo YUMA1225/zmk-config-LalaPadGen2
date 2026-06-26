@@ -111,11 +111,6 @@
     combos {
         compatible = "zmk,combos";
 
-        CONBO_ESC {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-        };
-
         COMBO_CLICK {
             bindings = <&mkp LCLK>;
             key-positions = <13 12>;
@@ -141,13 +136,13 @@
         TERTIARY_LAYER {
             display-name = "tertiary_layer";
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR      &kp PERCENT                          &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &custom_caret_tilde     &custom_yen_pipe
-&kp TAB          &mkp MB4           &mkp MB5        &trans          &kp AMPERSAND                        &trans   &trans                &trans                 &custom_at_grave        &kp BACKSPACE
-&kp LEFT_SHIFT   &kp LG(LS(N3))     &kp LG(LS(N4))  &kp LG(LS(N5))  &trans                               &trans   &trans                &trans                 &custom_semicolon_plus  &custom_colon_asterisk
-&kp LEFT_SHIFT   &kp LEFT_ALT       &kp LCTRL       &kp LEFT_GUI    &trans         &kp SPACE  &kp ENTER  &mo 3    &trans                &trans                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET
-                 &trans             &trans          &trans          &trans         &trans     &trans     &trans   &trans                &trans                 &trans
-&trans           &trans             &trans                                                                                              &trans                 &trans                  &trans
-&trans           &trans             &trans          &trans          &trans                               &trans   &trans                &trans                 &trans                  &trans
+&kp ESCAPE      &kp DOUBLE_QUOTES  &kp HASH        &kp DOLLAR      &kp PERCENT                          &kp SQT  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &custom_caret_tilde     &custom_yen_pipe
+&kp TAB         &mkp MB4           &mkp MB5        &trans          &kp AMPERSAND                        &trans   &trans                &trans                 &custom_at_grave        &kp BACKSPACE
+&kp LEFT_SHIFT  &kp LG(LS(N3))     &kp LG(LS(N4))  &kp LG(LS(N5))  &trans                               &trans   &trans                &trans                 &custom_semicolon_plus  &custom_colon_asterisk
+&kp LEFT_SHIFT  &kp LEFT_ALT       &kp LCTRL       &kp LEFT_GUI    &trans         &kp SPACE  &kp ENTER  &mo 3    &trans                &trans                 &kp LEFT_BRACKET        &kp RIGHT_BRACKET
+                &trans             &trans          &trans          &trans         &trans     &trans     &trans   &trans                &trans                 &trans
+&trans          &trans             &trans                                                                                              &trans                 &trans                  &trans
+&trans          &trans             &trans          &trans          &trans                               &trans   &trans                &trans                 &trans                  &trans
             >;
         };
 
